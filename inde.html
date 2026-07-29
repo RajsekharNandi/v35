@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON CSS SELECTORS</title>
+    <style>
+        /* .boxes:first-child{
+            background-color: red;
+        } */
+        /* .boxes::first-line{
+            background-color: yellow;
+        } */
+    /* .boxes *{
+        color:blue;
+        border: 2px solid black;
+    }
+    p, a, .box [data-color="primary"]{
+        padding: 54px;
+    } */
+     /* .box:nth-child(odd){
+     background-colore: blue;
+     } */
+      /* .box:nth-last-child(2){
+      background-colore:red; 
+      } */
+       .boxes::before{
+         content: "Cherry is good";
+       }
+.boxes::after{
+         content: "Cherry is hey hey ";
+       color:red;
+        }
+        .boxes::selection{
+            color:aliceblue;
+            background-color:black;
+
+        }
+      .box::first-letter{
+        color:PERU;
+        front: size 45px;
+      }
+      input::placeholder{
+        color:blue;
+        front: size 20px;;
+
+      }
+    
+    </style>
+</head>
+<body>
+    <div data-color="primary" class="boxes">Hey i am a box Lorem ipsum dol
+    <div class="boxes">Hey i am a box</div>
+     <input type ="text" placeholder="Enter your name">
+</body>
+</html>
